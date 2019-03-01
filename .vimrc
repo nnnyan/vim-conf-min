@@ -47,8 +47,6 @@ let g:airline_powerline_fonts = 1
 
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 
-let g:multi_cursor_select_all_word_key = ' n'
-
 nnoremap <silent> <leader>r :let @/ = ""<cr>
 nnoremap <silent> <leader><tab> <c-w><c-w>
 nnoremap <silent> <leader>ue :UltiSnipsEdit<cr>
