@@ -22,6 +22,7 @@ set smartindent
 set shiftround
 
 set undofile
+set undodir=~/.vim/undo
 
 set autoread
 
