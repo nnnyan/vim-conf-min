@@ -52,6 +52,7 @@ nnoremap <silent> <leader>r :let @/ = ""<cr>
 nnoremap <silent> <leader><tab> <c-w><c-w>
 nnoremap <silent> <leader>ue :UltiSnipsEdit<cr>
 nnoremap <leader>ul :e ~/.vim/plugged/vim-snippets/UltiSnips/
+nnoremap <leader>us :e ~/.vim/plugged/vim-snippets/snippets/
 nnoremap <silent> <leader>p :set paste!<cr>
 nnoremap <silent> <tab> :bn<cr>
 nnoremap <silent> <s-tab> :bp<cr>
@@ -74,7 +75,6 @@ augroup END
 
 augroup settab
 	au!
-	au FileType haskell set et
-	au FileType jsp set et
-	au FileType sh set et shiftwidth=2 tabstop=2
+	au FileType haskell,jsp set et
+	au FileType sh,perl,tex set et shiftwidth=2 tabstop=2
 augroup END
