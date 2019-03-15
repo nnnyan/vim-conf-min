@@ -1,4 +1,6 @@
 *~
 /plugged/
 /undo/*
+/tmp/*
 !/undo/.un
+!/undo/.tmp

@@ -22,7 +22,9 @@ set smartindent
 set shiftround
 
 set undofile
-set undodir=~/.vim/undo
+set undodir=~/.vim/undo/
+set backupdir=~/.vim/tmp/
+set directory=~/.vim/tmp/
 
 set autoread
 
@@ -46,7 +48,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_tabs = 0
 let g:airline_powerline_fonts = 1
 
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
+let g:UltiSnipsSnippetDirectories=["UltiSnips", $HOME.'/.vim/UltiSnips']
 
 nnoremap <silent> <leader>r :let @/ = ""<cr>
 nnoremap <silent> <leader><tab> <c-w><c-w>
